@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shelter Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Shelter Manager</h1>
+
+    <div id="controls">
+        <input type="text" id="searchName" placeholder="Search by name">
+        <button onclick="searchShelter()">Search</button>
+
+        <input type="text" id="filterLocation" placeholder="Filter by location">
+        <button onclick="filterByLocation()">Filter</button>
+
+        <input type="number" id="filterCapacity" placeholder="Minimum capacity">
+        <button onclick="filterByCapacity()">Filter</button>
+    </div>
+
+    <h2>Add New Shelter</h2>
+    <div id="addForm">
+        <input type="text" id="newName" placeholder="Name">
+        <input type="number" id="newCapacity" placeholder="Capacity">
+        <input type="text" id="newLocation" placeholder="Location">
+        <button onclick="addShelter()">Add Shelter</button>
+    </div>
+
+    <h2>Shelters</h2>
+    <table border="1" id="shelterTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Capacity</th>
+                <th>Location</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Shelters will appear here -->
+        </tbody>
+    </table>
+
+    <button onclick="saveShelters()">Save Shelters</button>
+
+    <script src="js/shelters.js"></script>
+</body>
+</html>
