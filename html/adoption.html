@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>CoExist — Adoption</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<h1 class="brand"><a href="index.html">CoExist</a></h1>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="adoption.html">Adoption</a>
+<a href="report.html">Report Abuse</a>
+<a href="shelter.html">Shelters & Volunteer</a>
+<a href="awareness.html">Awareness</a>
+</nav>
+</div>
+</header>
+<main class="container">
+<h2>Adoption Listings</h2>
+<div class="controls" style="margin-bottom: 20px;">
+    <button onclick="filterAnimals('All')">All</button>
+    <button onclick="filterAnimals('Dog')">Dogs</button>
+    <button onclick="filterAnimals('Cat')">Cats</button>
+</div>
+<div id="adoption-listings" class="grid">
+    </div>
+</main>
+<footer class="site-footer">
+<div class="container">© CoExist — Group 3</div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/adoption.js"></script>
+</body>
+</html>
